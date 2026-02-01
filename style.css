@@ -1,5 +1,5 @@
 CSS
-/* 1. GLOBAL STYLES & BACKGROUND */
+/* 1. GLOBAL STYLES & RACING BACKGROUND */
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +7,25 @@ CSS
 }
 
 body {
-    /* Your racing image with a dark overlay for readability */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('race-background.jpg');
+    /* Links to your specific file: ai-vs-everybody.jpg */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('ai-vs-everybody.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    /* Kept your original font and layout */
+    /* Your original structural settings */
     font-family: Georgia, serif;
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    color: #f0f0f0; /* Changed to light gray for the dark background */
+    color: #f0f0f0; /* Light text for dark background */
 }
 
-/* 2. HEADER & TAGLINE */
+/* 2. HEADER & NAVIGATION */
 header {
-    border-bottom: 2px solid #00d4ff; /* Neon blue to match the race car */
+    border-bottom: 2px solid #00d4ff; /* Neon blue matching the image */
     padding-bottom: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -33,7 +33,7 @@ header {
 
 header h1 {
     margin-bottom: 5px;
-    color: #00d4ff; /* Neon blue */
+    color: #00d4ff;
 }
 
 header .tagline {
@@ -53,11 +53,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* 3. POST LIST (Transparent Glass Effect) */
+/* 3. POST LIST (Glass effect for readability) */
 .post-list {
     list-style: none;
-    background: rgba(255, 255, 255, 0.05); /* Slight tint so text pops */
-    backdrop-filter: blur(10px); /* Blurs the background behind the list */
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px); 
     padding: 25px;
     border-radius: 15px;
 }
@@ -70,7 +70,7 @@ nav a:hover {
 
 .post-list a {
     font-size: 1.3em;
-    color: #00d4ff; /* Neon blue links */
+    color: #00d4ff; 
     text-decoration: none;
 }
 
@@ -97,10 +97,6 @@ article .date {
     margin-bottom: 20px;
 }
 
-article p {
-    margin-bottom: 1em;
-}
-
 /* 5. FOOTER */
 footer {
     margin-top: 50px;
@@ -119,11 +115,3 @@ article img {
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-Final Instructions to make it work:
-Rename your image: Before you upload the "AI vs Everybody" racing image, make sure it is named exactly race-background.jpg.
-
-Upload to GitHub: Add it to the main folder of your repository.
-
-Update style.css: Click the Pencil icon on your style.css on GitHub, delete everything inside, and paste the code above.
-
-Save/Commit: Hit Commit changes at the bottom.
