@@ -1,5 +1,4 @@
 CSS
-/* 1. GLOBAL STYLES & RACING BACKGROUND */
 * {
     margin: 0;
     padding: 0;
@@ -7,112 +6,176 @@ CSS
 }
 
 body {
-    /* Links to your specific file: ai-vs-everybody.jpg */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('ai-vs-everybody.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-    /* Your original structural settings */
     font-family: Georgia, serif;
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    color: #f0f0f0; /* Light text for dark background */
+    background-color: #fafafa;
+    color: #333;
 }
 
-/* 2. HEADER & NAVIGATION */
 header {
-    border-bottom: 2px solid #00d4ff; /* Neon blue matching the image */
+    border-bottom: 2px solid #333;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 header h1 {
     margin-bottom: 5px;
-    color: #00d4ff;
 }
 
 header .tagline {
-    color: #bbbbbb;
+    color: #666;
     font-style: italic;
     margin-bottom: 10px;
 }
 
 nav a {
-    color: #00d4ff;
+    color: #0066cc;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* 3. POST LIST (Glass effect for readability) */
+/* Post list on index page */
 .post-list {
     list-style: none;
-    background: rgba(255, 255, 255, 0.05); 
-    backdrop-filter: blur(10px); 
-    padding: 25px;
-    border-radius: 15px;
 }
 
 .post-list li {
     margin-bottom: 25px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #ddd;
 }
 
 .post-list a {
     font-size: 1.3em;
-    color: #00d4ff; 
+    color: #333;
     text-decoration: none;
 }
 
 .post-list a:hover {
-    color: #ffffff;
+    color: #0066cc;
 }
 
 .post-list .date {
     display: block;
     margin-top: 5px;
-    color: #aaaaaa;
+    color: #666;
     font-style: italic;
 }
 
-/* 4. INDIVIDUAL POST PAGES */
+/* Individual post pages */
 article h2 {
     margin-bottom: 5px;
-    color: #00d4ff;
 }
 
 article .date {
-    color: #aaaaaa;
+    color: #666;
     font-style: italic;
     margin-bottom: 20px;
 }
 
-/* 5. FOOTER */
+article p {
+    margin-bottom: 1em;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    margin: 1.5em 0;
+    padding-left: 1em;
+    font-style: italic;
+    color: #555;
+}
+
 footer {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    color: #888888;
+    border-top: 1px solid #ccc;
+    color: #666;
     font-size: 0.9em;
-    text-align: center;
 }
 
-/* 6. IMAGES IN POSTS */
+/* Images in posts */
 article img {
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.image-caption {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+}
+
+/* Improve Readability for all Articles */
+article, main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+}
+
+/* Consistent Style for Newsletter Dates */
+.date {
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+/* Ensure images don't overflow on mobile */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styling for your Navigation List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Unique Header for the Cover Page only */
+.cover-header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('cover-racetrack.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
