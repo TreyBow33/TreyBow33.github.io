@@ -5,10 +5,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    /* This uses your racing image with a dark overlay so text stays readable */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('ai-vs-everybody.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #f0f0f0;
+    color: #f0f0f0; /* Light gray text for high contrast */
 }
 
 main {
@@ -18,8 +19,9 @@ main {
 }
 
 h1, h2, h3 {
-    color: #00d4ff; /* Neon Blue Accent */
+    color: #00d4ff; /* Your signature Neon Blue */
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 a {
@@ -29,83 +31,93 @@ a {
 }
 
 a:hover {
-    text-shadow: 0 0 8px #00d4ff;
+    text-shadow: 0 0 10px #00d4ff; /* Glow effect on links */
+    color: #fff;
 }
 
 /* --- Header & Footer --- */
 .cover-header {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #00d4ff;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #444;
-    font-size: 0.9rem;
+.tagline {
+    font-style: italic;
+    color: #aaa;
 }
 
-/* --- Post List (Glass Effect) --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* --- Post List (The Glassmorphism Effect) --- */
 .post-list {
     list-style: none;
     padding: 0;
 }
 
 .post-list li {
-    background: rgba(255, 255, 255, 0.1); /* Transparent glass base */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 15px;
-    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.05); /* Transparent glass base */
+    backdrop-filter: blur(12px); /* The frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.4s ease;
 }
 
 .post-list li:hover {
     border-color: #00d4ff;
-    transform: translateY(-3px);
+    background: rgba(0, 212, 255, 0.05); /* Subtle blue tint on hover */
+    transform: translateX(5px); /* Gentle slide-in animation */
 }
 
 .date {
     display: block;
-    font-size: 0.85rem;
-    color: #aaa;
-    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #00d4ff;
+    margin-top: 8px;
+    opacity: 0.8;
 }
 
-/* --- PRICING TABLE STYLES (NEW) --- */
+/* --- Pricing Table (For the Research Post) --- */
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
-    background: rgba(0, 212, 255, 0.05); /* Very faint neon tint */
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    border-radius: 10px;
+    overflow: hidden; /* Keeps the corners rounded */
 }
 
 .pricing-table th {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(0, 212, 255, 0.15);
     color: #00d4ff;
     padding: 15px;
     text-align: left;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    border-bottom: 2px solid #00d4ff;
 }
 
 .pricing-table td {
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.pricing-table tr:last-child td {
-    border-bottom: none;
+    vertical-align: top;
 }
 
 .pricing-table tr:hover {
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Special class for the Research Post article text */
+.research-post p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
 }
