@@ -1,123 +1,28 @@
-CSS
-/* --- Global Styles --- */
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    /* This uses your racing image with a dark overlay so text stays readable */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('ai-vs-everybody.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #f0f0f0; /* Light gray text for high contrast */
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    color: #00d4ff; /* Your signature Neon Blue */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
+/* General Link Styling */
 a {
-    color: #00d4ff;
-    text-decoration: none;
-    transition: 0.3s;
+    color: #000000 !important;
+    text-decoration: underline;
+    transition: all 0.3s ease; /* Makes the highlight transition smooth */
 }
 
+/* The Hover Effect: Highlights as the pointer moves over the link */
 a:hover {
-    text-shadow: 0 0 10px #00d4ff; /* Glow effect on links */
-    color: #fff;
+    color: #555555 !important; /* Subtle gray highlight */
+    background-color: #f0f0f0; /* Light gray background pop */
+    text-decoration: none;      /* Removes underline on hover for a clean look */
+    cursor: pointer;
 }
 
-/* --- Header & Footer --- */
-.cover-header {
-    text-align: center;
-    padding: 80px 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #00d4ff;
+/* Navigation Specific Hover */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
 }
 
-.tagline {
-    font-style: italic;
-    color: #aaa;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-    border-top: 1px solid #333;
-    font-size: 0.85rem;
-    color: #888;
-}
-
-/* --- Post List (The Glassmorphism Effect) --- */
-.post-list {
-    list-style: none;
-    padding: 0;
-}
-
-.post-list li {
-    background: rgba(255, 255, 255, 0.05); /* Transparent glass base */
-    backdrop-filter: blur(12px); /* The frosted glass look */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    margin-bottom: 20px;
-    padding: 20px;
-    transition: all 0.4s ease;
-}
-
-.post-list li:hover {
-    border-color: #00d4ff;
-    background: rgba(0, 212, 255, 0.05); /* Subtle blue tint on hover */
-    transform: translateX(5px); /* Gentle slide-in animation */
-}
-
-.date {
-    display: block;
-    font-size: 0.8rem;
-    color: #00d4ff;
-    margin-top: 8px;
-    opacity: 0.8;
-}
-
-/* --- Pricing Table (For the Research Post) --- */
-.pricing-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 30px 0;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 212, 255, 0.4);
-    border-radius: 10px;
-    overflow: hidden; /* Keeps the corners rounded */
-}
-
-.pricing-table th {
-    background: rgba(0, 212, 255, 0.15);
-    color: #00d4ff;
-    padding: 15px;
-    text-align: left;
-    border-bottom: 2px solid #00d4ff;
-}
-
-.pricing-table td {
-    padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    vertical-align: top;
-}
-
-.pricing-table tr:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-/* Special class for the Research Post article text */
-.research-post p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+nav a:hover {
+    border-bottom: 2px solid #000000; /* Adds a bold underline highlight */
+    background-color: #eeeeee;
 }
