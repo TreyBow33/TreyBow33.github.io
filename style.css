@@ -11,37 +11,38 @@ body {
     padding: 0;
 }
 
-/* Header with Week 6 Title and Race Track AI Art */
-header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-                      url('assets/images/race-track.jpg'); 
+/* Homepage Header with AI-vs-Everybody Art */
+header.home-header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+                      url('ai-vs-everybody.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
     border-bottom: 3px solid #000000;
 }
 
-/* Hover Highlight for Links */
+/* Hover Highlight Effect for Pointer */
 a {
+    transition: background-color 0.2s ease;
     text-decoration: underline;
-    transition: background-color 0.2s;
+    padding: 2px 4px;
 }
 
 a:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
+    background-color: #f0f0f0; /* Light gray highlight */
     text-decoration: none;
+    cursor: pointer;
 }
 
-.newsletter-feed {
+.feed-container {
     max-width: 850px;
     margin: 40px auto;
     padding: 20px;
 }
 
-.article-entry {
-    margin-bottom: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #000;
+.article-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #000;
 }
