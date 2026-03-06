@@ -1,28 +1,50 @@
-/* General Link Styling */
-a {
-    color: #000000 !important;
-    text-decoration: underline;
-    transition: all 0.3s ease; /* Makes the highlight transition smooth */
+/* Universal Styles */
+* {
+    color: #000000 !important; /* Forces all text to be pure black */
 }
 
-/* The Hover Effect: Highlights as the pointer moves over the link */
-a:hover {
-    color: #555555 !important; /* Subtle gray highlight */
-    background-color: #f0f0f0; /* Light gray background pop */
-    text-decoration: none;      /* Removes underline on hover for a clean look */
-    cursor: pointer;
+body {
+    /* Replace 'race-track.jpg' with your actual file name */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                      url('assets/images/race-track.jpg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Specific Hover */
+/* Navigation & Hover Effects */
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
 nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 10px;
+    transition: all 0.3s ease;
 }
 
+/* Pointer Highlight Effect */
 nav a:hover {
-    border-bottom: 2px solid #000000; /* Adds a bold underline highlight */
-    background-color: #eeeeee;
+    background-color: #000000;
+    color: #ffffff !important; /* Inverts color for high contrast on hover */
+    cursor: pointer;
+}
+
+/* Content Container */
+.content-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85); /* Makes text readable over the art */
+    border: 1px solid #000;
 }
