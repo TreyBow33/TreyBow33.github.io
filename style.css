@@ -1,4 +1,4 @@
-/* Force all text to be pure black */
+/* Universal Black Text */
 * {
     color: #000000 !important;
 }
@@ -11,9 +11,9 @@ body {
     padding: 0;
 }
 
-/* Header with Race Track AI Art */
+/* Header with Week 6 Title and Race Track AI Art */
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
                       url('assets/images/race-track.jpg'); 
     background-size: cover;
     background-position: center;
@@ -34,15 +34,14 @@ a:hover {
     text-decoration: none;
 }
 
-.content-wrapper {
+.newsletter-feed {
     max-width: 850px;
     margin: 40px auto;
     padding: 20px;
 }
 
-.newsletter-entry {
-    margin-bottom: 50px;
+.article-entry {
+    margin-bottom: 60px;
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
 }
-
